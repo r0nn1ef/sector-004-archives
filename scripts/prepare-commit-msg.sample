@@ -9,7 +9,7 @@
 #########################################
 
 # 1. Define LCARS Metadata
-STARDATE=$(date +%Y.%j)
+STARDATE=$(date +%Y%m%d.%H%M%S)
 STATION=$(hostname -s | tr '[:lower:]' '[:upper:]')
 BRANCH=$(git rev-parse --abbrev-ref HEAD | tr '[:lower:]' '[:upper:]')
 
