@@ -8,24 +8,22 @@
 #
 #########################################
 
-# 1. Generate the Stardate (Format: Year + Day of Year for a more 'Trek' feel)
-# Example: 2024.312
+# 1. Define LCARS Metadata
 STARDATE=$(date +%Y.%j)
-
-# 2. Get the Station ID (Hostname in Uppercase)
 STATION=$(hostname -s | tr '[:lower:]' '[:upper:]')
-
-# 3. Identify the Branch (e.g., Main Bridge, Engineering, Tactical)
 BRANCH=$(git rev-parse --abbrev-ref HEAD | tr '[:lower:]' '[:upper:]')
 
-# 4. Process the Commit Message
-COMMIT_MSG_FILE=$1
-COMMIT_SOURCE=$2
+# 2. Target the commit message file
+MSG_FILE=$1
 
-# Only modify the message if it's a new commit (not a merge or ammend)
-if [ -z "$COMMIT_SOURCE" ]; then
-  USER_MSG=$(cat "$COMMIT_MSG_FILE")
-  
-  # Format: [STARDATE XXXX.XXX] [STATION: NAME] [SUBSYSTEM: BRANCH] : MESSAGE
-  echo "[STARDATE $STARDATE] [ORIGIN: $STATION] [SUBSYSTEM: $BRANCH] : $USER_MSG" > "$COMMIT_MSG_FILE"
+# 3. Read the current message
+ORIGINAL_MSG=$(cat "$MSG_FILE")
+
+# 4. Prevent infinite loops (don't add if [STARDATE] is already there)
+if [[ "$ORIGINAL_MSG" != *"[STARDATE"* ]]; then
+    # Construct the Starfleet Header
+    NEW_MSG="[STARDATE $STARDATE] [ORIGIN: $STATION] [SUBSYSTEM: $BRANCH] : $ORIGINAL_MSG"
+
+    # Overwrite the file with the new formatted message
+    echo "$NEW_MSG" > "$MSG_FILE"
 fi
