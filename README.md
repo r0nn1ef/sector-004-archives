@@ -46,7 +46,7 @@ provide the essential stability required to govern the quadrant's data flow.
 
 ### Excelsior
 
-The primary command and control asset. The primary command and control asset. As the flagship of the Sector 004 fleet, 
+The primary command and control asset. As the flagship of the Sector 004 fleet, 
 Excelsior serves as the Admiral's interface for high-level design, secure terminal access, and the architectural 
 development of the Joint Command grid.
 
