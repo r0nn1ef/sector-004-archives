@@ -9,7 +9,14 @@ posture to preserve the integrity of the quadrant.
 
 ---
 
-## 🗺️ System Topology [INACTIVE]
+## 🗺️ System Topology
+
+<p align="center">
+  <a href="assets/lcars-network-diagram.svg">
+    <img src="assets/lcars-network-diagram.svg" width="100%" alt="LCARS Sector 004 Tactical Map">
+  </a>
+</p>
+
 *Figure 1.0: Logical mapping of the Sector 004 Perimeter. Click image to enlarge tactical view.*
 
 ---
