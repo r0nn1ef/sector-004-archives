@@ -12,8 +12,8 @@ posture to preserve the integrity of the quadrant.
 ## 🗺️ System Topology
 
 <p align="center">
-  <a href="assets/lcars-network-diagram.svg">
-    <img src="assets/lcars-network-diagram.svg" width="100%" alt="LCARS Sector 004 Tactical Map">
+  <a href="assets/lcars-network-diagram.jpg">
+    <img src="assets/lcars-network-diagram.jpg" width="100%" alt="LCARS Sector 004 Tactical Map">
   </a>
 </p>
 
