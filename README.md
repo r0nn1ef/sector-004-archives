@@ -34,7 +34,7 @@ The Sector 004 perimeter is currently hardened against external intrusion.
 | Designation         | Registry       | Frequency (IP)  | Mission / Services                                         |
 |:--------------------|:---------------|:----------------|:-----------------------------------------------------------|
 | **Excelsior**       | `NCC-2000`     | `192.168.4.30`  | Command & Control / Primary Workstation                    |
-| **Defiant**         | `NX-74205`     | `192.168.4.30`  | Command & Control / Primary Workstation                    |
+| **Defiant**         | `NX-74205`     | `192.168.4.30`  | Command & Control / Mobile Workstation                     |
 | **Memory Alpha**    | `MAS-04`       | `192.168.4.190` | Central Core: Odoo, Penpot, Navidrome, Samba               |
 | **Bilana**          | `NCC-40112`    | `192.168.4.182` | Industrial Replicator: HP LaserJet 1160 (CUPS)             |
 | **Jupiter Station** | `STA-J1`       | `192.168.4.181` | Industrial Replicator: Canon MX-512 Multi-function printer |
