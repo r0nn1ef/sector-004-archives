@@ -11,8 +11,12 @@ Detailed configuration for the K3s orchestration layer. This document serves as 
 * **Orchestrator:** K3s (vX.X.X)
 
 ## 🐝 Node Manifest (Drones)
-* **Control Plane:** Unimatrix-01
-* **Workers:** Adjunct-01, 02, 03
+| Designation  | Hardware     | Role          | Status                             |
+|:-------------|:-------------|:--------------|:-----------------------------------|
+| Unimatrix-01 | RPi 4 (4GB)  | Control Plane | :green_circle: ASSIMILATED         |
+| Adjunct-01   | RPi 4 (4GB)  | Worker        | :green_circle: ASSIMILATED         |
+| Adjunct-02   | RPi 4 (TBD)  | Worker        | :white_circle: FUTURE ASSIMILATION |
+| Adjunct-03   | RPi 4 (TBD)  | Federation    | :white_circle: FUTURE ASSIMILATION |
 
 ## 🌡️ Environmental Controls (Thermal)
 Sector 004 utilizes a shared-chassis cooling system rather than individual node fans.
