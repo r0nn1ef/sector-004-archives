@@ -16,9 +16,9 @@ The eero Pro 6E serves as the Sector 004 primary router, firewall, and DHCP coor
 
 **Model:** eero Pro 6E (Tri-band Wi-Fi 6E)
 
-**External Uplink:** Port 1 (2.5 Gbps) → ISP
+**External Uplink:** Port 1 (2.5 Gbps) :arrow_right: ISP
 
-**Internal Downlink:** Port 2 (1.0 Gbps) → Connected to Primary Switch (Edge Hub)
+**Internal Downlink:** Port 2 (1.0 Gbps) :arrow_right: Connected to Primary Switch (Edge Hub)
 
 #### 📡 Wireless Subsystems
 
@@ -47,7 +47,7 @@ from the Subspace Gateway to the Federation Edge and the Borg Collective.
 
 * **Model:** TP-Link TL-SG105 (5-Port Unmanaged)
 * **Fabric:** High-performance, non-blocking switching.
-* **Uplink:** Port 1 ← Gateway (Port 2)
+* **Uplink:** Port 1 :arrow_left: Gateway (Port 2)
 
 #### 🗺️ Physical Port Map
 | Port | Device            | VLAN                | Status      |
