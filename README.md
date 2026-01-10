@@ -43,8 +43,8 @@ The Sector 004 perimeter is currently hardened against external intrusion.
 | **Phillips TV**     | `MEDIA_SINK_01`    | `DHCP` | :green_circle: Master Viewscreen                       |
 | **TCL TV**          | `MEDIA_SINK_02/03` | `DHCP` | :green_circle: Secondary Visual Relays                       |
 | **Xbox One**        | `SUBSPACE_SIM`     | `DHCP` | :green_circle: Tactical Simulation                                        |
-| **Wansview G6**     | `CT-S20-1`         | `DHCP` | :green_circle: Internal Security Grid                                     |
-| **Wansview G6**     | `CT-S20-2`         | `DHCP` | :green_circle: Internal Security Grid                                     |
+| **1080p Tactical Sensor**     | `CT-S20-1`         | `DHCP` | :green_circle: Internal Security Grid                                     |
+| **1080p Tactical Sensor**     | `CT-S20-2`         | `DHCP` | :green_circle: Internal Security Grid                                     |
 
 ---
 
