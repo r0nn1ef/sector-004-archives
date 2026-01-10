@@ -64,17 +64,27 @@ This is the "Federation Bridge Hub," optimized for high-performance data exchang
 central archives.
 
 #### 🗺️ Physical Port Map
-| Port | Device                            | VLAN                | Status     |
-|:-----|:----------------------------------|:--------------------|:-----------|
-| 1    | Core Switch                       | Federation          | :green_circle: Active  |
-| 2    | Excelsior                         | Federation          | :green_circle: Active  |
-| 3    | Memory Alpha                      | Federation          | :green_circle: Active  |
-| 4    | Open                              | Federation          | :white_circle: Reserved |
-| 5    | Open                              | Federation          | :white_circle: Reserved |
-| 6    | Open                              | Federation          | :white_circle: Reserved |
-| 7    | Open                              | Federation          | :white_circle: Reserved |
-| 8    | Open                              | Federation          | :white_circle: Reserved |
+| Port | Device                                      | VLAN                | Status                  |
+|:-----|:--------------------------------------------|:--------------------|:------------------------|
+| 1    | Core Switch                                 | Federation          | :green_circle: Active   |
+| 2    | Excelsior                                   | Federation          | :green_circle: Active   |
+| 3    | Memory Alpha                                | Federation          | :green_circle: Active   |
+| 4    | Phillips 55PFL5604                          | Federation          | :green_circle: Active   |
+| 5    | Open                                        | Federation          | :white_circle: Reserved |
+| 6    | Open                                        | Federation          | :white_circle: Reserved |
+| 7    | Open                                        | Federation          | :white_circle: Reserved |
+| 8    | Open                                        | Federation          | :white_circle: Reserved |
 
+
+### 🛰️ Subspace Relay (EX6250 Mesh Extender)
+
+The Netgear EX6250 acts as a range extension node, projecting the Federation wireless signal into the far reaches of 
+Sector 004. It provides the primary link for mobile sensors and auxiliary media displays.
+
+#### 📡 Relay Specifications
+* **Model:** Netgear EX6250 (AC1750 Dual Band)
+* **Uplink:** Wireless Backhaul :arrow_left: Subspace Gateway (eero Pro 6E)
+* **Primary Function:** Signal amplification for the Media and Security grids.
 
 ### 🛰️ Collective Switch (PoE+ Fabric)
 
