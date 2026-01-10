@@ -52,7 +52,7 @@ Detailed schematics and installation logs for each sector:
 * 🛰️ [Workstation Schematics](./docs/workstations.md) - Workstations Configuration and Application
 * 🏛️ [Memory Alpha Services](./docs/memory-alpha.md) - Application Layer (Odoo/Navidrome)
 * 🖨️ [Replication Protocols](./docs/replica-units.md) - Peripheral Integration
-* * 🧠 [Unimatrix Cluster Setup](./docs/unimatrix-cluster.md) - K3s and Node Configuration
+* 🧠 [Unimatrix Cluster Setup](./docs/unimatrix-cluster.md) - K3s and Node Configuration
 
 ## The Federation
 
