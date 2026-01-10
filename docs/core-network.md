@@ -76,4 +76,26 @@ central archives.
 | 8    | Open                              | Federation          | :white_circle: Reserved |
 
 
-* **PoE+ Fabric:** [Model/Specs TBD]
+### 🛰️ Collective Switch (PoE+ Fabric)
+
+The VM-F0820GP is a dedicated PoE+ managed switch. It provides the primary neural link and power distribution for the 
+Borg Collective drones, ensuring a single-cable "Assimilation" process for each node.
+
+#### 🗺️ Physical Port Map
+| Port | Device       | VLAN       | Status                  |
+|:-----|:-------------|:-----------|:------------------------|
+| 1    | Core Switch  | Federation | :green_circle: Active   |
+| 2    | Unimatrix-01 | The Hive   | :green_circle: Active   |
+| 3    | Adjunct-01   | The Hive | :green_circle: Active   |
+| 4    | Adjunct-02   | The Hive | :red_circle: Offline    |
+| 5    | Adjunct-03   | The Hive | :red_circle: Offline    |
+| 6    | Open         | Future Drone Assimilation | :white_circle: Reserved |
+| 7    | Open         | Future Drone Assimilation | :white_circle: Reserved |
+| 8    | Open         | Future Drone Assimilation | :white_circle: Reserved |
+
+#### ⚡ Power Logistics (PoE Management)
+
+The Hive requires constant energy to maintain synchronization. Monitoring the PoE budget prevents "Neural Collapse" (power brownouts).
+
+* Switch PoE Budget: 120W
+* Typical Drone Load: ~3.2W - 3.8W
