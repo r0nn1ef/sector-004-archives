@@ -14,6 +14,15 @@ Detailed configuration for the K3s orchestration layer. This document serves as 
 * **Control Plane:** Unimatrix-01
 * **Workers:** Adjunct-01, 02, 03
 
+## 🌡️ Environmental Controls (Thermal)
+Sector 004 utilizes a shared-chassis cooling system rather than individual node fans.
+
+* **Primary Cooling:** 2x Chassis Fans.
+* **Power Source:** 
+    * Fan 1: Powered by **Adjunct-01** (GPIO).
+    * Fan 2: Powered by **Adjunct-03** (GPIO).
+* **Thermal Target:** Maintain Vcore temperatures below 60°C during peak assimilation.
+
 ---
 
 ### UNIMATRIX-01 [Online]
