@@ -9,6 +9,7 @@ Operational logs for the archival and application layer. This Outpost hosts the 
 * **Odoo:** ERP / Resource Management
 * **Navidrome:** Sonic Archives
 * **Penpot:** Design Schematics
+* **Apache Solr** Enterprise Search Platform
 * **Samba:** Central Data Uplink
 
 ---
