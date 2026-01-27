@@ -31,17 +31,17 @@ The Sector 004 perimeter is currently hardened against external intrusion.
 
 ## 🚢 Fleet Manifest & Uplink Frequencies
 
-| Designation         | Registry           | Frequency (IP)  | Mission / Services                                            |
-|:--------------------|:-------------------|:----------------|:--------------------------------------------------------------|
+| Designation         | Registry           | Frequency (IP)  | Mission / Services                                                        |
+|:--------------------|:-------------------|:----------------|:--------------------------------------------------------------------------|
 | **Excelsior**       | `NCC-2000`         | `192.168.4.30`  | :green_circle: Command & Control / Primary Workstation                    |
 | **Defiant**         | `NX-74205`         | `DHCP`          | :green_circle: Command & Control / Mobile Workstation                     |
-| **Memory Alpha**    | `MAS-04`           | `192.168.4.190` | :green_circle: Central Core: Odoo, Penpot, Navidrome, Samba               |
+| **Memory Alpha**    | `MAS-04`           | `192.168.4.190` | :green_circle: Central Core: Odoo, Penpot, Solr, Navidrome, Samba         |
 | **Bilana**          | `NCC-40112`        | `192.168.4.182` | :green_circle: Industrial Replicator: HP LaserJet 1160 (CUPS)             |
 | **Jupiter Station** | `STA-J1`           | `192.168.4.181` | :green_circle: Industrial Replicator: Canon MX-512 Multi-function printer |
 | **The Hive**        | `UNIMATRIX-01`     | `192.168.4.220` | :green_circle: Collective Queen: K3s Control Plane                        |
 | **Adjunct-01**      | `ADJUNCT-01`       | `192.168.4.221` | :green_circle: Worker Node: Containerized Workloads                       |
-| **Phillips TV**     | `MEDIA_SINK_01`    | `DHCP` | :green_circle: Master Viewscreen                       |
-| **TCL TV**          | `MEDIA_SINK_02/03` | `DHCP` | :green_circle: Secondary Visual Relays                       |
+| **Phillips TV**     | `MEDIA_SINK_01`    | `DHCP` | :green_circle: Master Viewscreen                                          |
+| **TCL TV**          | `MEDIA_SINK_02/03` | `DHCP` | :green_circle: Secondary Visual Relays                                    |
 | **Xbox One**        | `SUBSPACE_SIM`     | `DHCP` | :green_circle: Tactical Simulation                                        |
 | **1080p Tactical Sensor**     | `CT-S20-1`         | `DHCP` | :green_circle: Internal Security Grid                                     |
 | **1080p Tactical Sensor**     | `CT-S20-2`         | `DHCP` | :green_circle: Internal Security Grid                                     |
