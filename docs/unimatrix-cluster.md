@@ -73,7 +73,19 @@ sudo vi /media/$USER/bootfs/cmdline.txt
 # Add: cgroup_enable=cpuset cgroup_memory=1 cgroup_enable=memory
 ````
 
-2. Establish Identity & Static Networking
+2. Hardware Optimization 
+
+Access the bootfs partition to disable unnecessary hardware radios to save power and improve security.
+
+````bash
+# Disable WiFi and Bluetooth (Append to the end of config.txt)
+sudo vi /media/$USER/bootfs/config.txt
+# Add: 
+# dtoverlay=disable-wifi
+# dtoverlay=disable-bt
+````
+
+3. Establish Identity & Static Networking
 
 Access the rootfs partition to hardcode the node's identity and network coordinates.
 
@@ -116,17 +128,7 @@ method=ignore
 sudo chmod 600 /media/$USER/rootfs/etc/NetworkManager/system-connections/eth0-static.nmconnection
 ````
 
-### 🚀 Phase 2: Post-Boot Optimization
-
-Once the drone is powered on and reachable via SSH, disable the wireless sub-systems to focus all bandwidth on the primary wired uplink.
-
-````bash
-# Disconnect and disable WiFi radio
-sudo nmcli device set wlan0 managed no
-sudo nmcli radio wifi off
-````
-
-### 🧠 Phase 3: Cluster Initialization
+### 🧠 Phase 2: Cluster Initialization
 
 **1. Initialize the Queen (Control Plane - Unimatrix-01)**
 
