@@ -160,13 +160,59 @@ export K3S_TOKEN=[QUEEN_TOKEN]
 curl -sfL https://get.k3s.io | sudo -E sh -
 ````
 
-### 🖖 Phase 4: Collective Synchronization Check
+### 🖖 Phase 3: Collective Synchronization Check
 
 Verify that all assets are reporting to the Hive and are ready for tasking:
 
 ````bash
 kubectl get nodes -o wide
 ````
+
+### Phase 4: Disaster Recovery & Expansion
+
+Use these steps to create a "Master Image" for storage on the NAS and to prep future nodes.
+
+**1. Sanitize the Master (The "Seal" Step)**
+
+Once ```unimatrix-01``` is fully configured, booted for the first time, and all updates have been run, you will need to
+sanitize the system before creating the master image. To do that, in a terminal on ``unimatrix-01``, run the following commands.
+
+```bash
+# Clear machine-id so clones regenerate it on boot
+sudo truncate -s 0 /etc/machine-id
+
+# Optional: Clear your bash history to keep the image clean
+cat /dev/null > ~/.bash_history && history -c
+
+# Power down to remove the card
+sudo poweroff
+```
+
+**2.Create the Golden Image**
+
+Plug the card into your Linux Mint workstation and run the following commands.
+
+```bash
+# Identify your SD card (e.g., /dev/sdb)
+lsblk
+
+# Create a raw image file
+sudo dd if=/dev/sdb of=unimatrix_golden_raw.img bs=4M status=progress
+```
+
+**3. Universal Shrink with PiShrink**
+
+This step ensures the image fits on any 128GB card (even if the sector count is slightly different) and enables auto-expansion.
+
+```bash
+# Shrink and compress (-z) for the NAS
+# This creates unimatrix_v1.img.gz
+sudo pishrink.sh -z unimatrix_golden_raw.img unimatrix_v1.img
+```
+
+**4. Storage on NAS**
+
+Move the _unimatrix_golden_raw.img_ file to the network storage device. Your future self will thank you if a card ever fails!
 
 ## 📊 Tactical HUD: Monitoring the Collective
 
